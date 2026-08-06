@@ -30,38 +30,41 @@ AI:  output/신안_PF조기상환.pptx 생성 완료 (6장)
 
 > 관리자 권한 필요 없습니다. Bun 설치도 필요 없습니다. 회사 PC 그대로 됩니다.
 
-## 설치 (3단계, 2분)
+## 설치 — 터미널에 한 줄
 
-### 1단계 — 다운로드
+다운로드도 압축 풀기도 없습니다. 쓰시는 터미널에 그대로 붙여넣으세요.
 
-[**최신 Release에서 `kch-ppt-lightweight-v0.2.1.zip` 받기**](https://github.com/lee90-creator/pptkit/releases/latest)
+**Windows (PowerShell)**
 
-7MB짜리 파일 하나입니다.
-
-### 2단계 — 압축 풀고 설치
-
-압축을 푼 폴더에서 **주소창에 `cmd` 입력 후 Enter** (또는 터미널에서 그 폴더로 이동), 그리고:
-
-```bat
-setup\run.bat --install-only
+```powershell
+irm https://raw.githubusercontent.com/lee90-creator/pptkit/main/setup/install-remote.ps1 | iex
 ```
 
-이런 화면이 나오면 성공입니다.
+**WSL / macOS / Linux**
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/lee90-creator/pptkit/main/setup/install.sh | bash
+```
+
+Claude Code나 Codex 터미널 안에서 그대로 돌리셔도 됩니다.
+이런 화면이 나오면 끝입니다.
 
 ```text
 {"id":"node","state":"CHECK","message":"기존 Node.js v22.0.0을 사용합니다."}
 {"id":"application","state":"INSTALL","message":"KCHPPT CLI를 준비했습니다."}
 {"id":"claude-kchppt","state":"INSTALL","message":"Claude Code 스킬을 준비했습니다."}
 {"id":"codex-kchppt","state":"INSTALL","message":"Codex 스킬을 준비했습니다."}
+{"id":"done","state":"CHECK","message":"설치를 마쳤습니다."}
 ```
 
-### 3단계 — 확인
+### 업데이트도 같은 명령
 
-```bat
-setup\run.bat --diagnose
-```
+같은 줄을 다시 실행하면 최신판으로 갱신됩니다.
+바뀐 게 없으면 `SKIP`만 찍고 아무것도 건드리지 않습니다.
 
-Claude Code·Codex 연결까지 확인해 줍니다.
+> 사내망이 GitHub를 막아서 위 명령이 안 되면,
+> [Release 페이지](https://github.com/lee90-creator/pptkit/releases/latest)에서 `kch-ppt-lightweight.zip`을
+> 받아 압축을 푼 폴더에서 `setup\run.bat --install-only`를 실행하세요.
 
 ## 이제 쓰면 됩니다
 
@@ -97,14 +100,26 @@ Node.js가 없거나 PATH에 없습니다. [nodejs.org](https://nodejs.org)에�
 
 ## 설치되는 위치
 
+**Windows**
+
 ```text
-%LOCALAPPDATA%\KCH\PptAutomation\      KCHPPT CLI, KCH 자산, PowerPoint QA
+%LOCALAPPDATA%\KCH\PptAutomation\        KCHPPT CLI, KCH 자산, PowerPoint QA
 %LOCALAPPDATA%\Microsoft\Windows\Fonts\  Pretendard 글꼴
-%USERPROFILE%\.claude\skills\kchppt\    Claude Code용 스킬
-%USERPROFILE%\.agents\skills\kchppt\    Codex용 스킬
+%USERPROFILE%\.claude\skills\kchppt\      Claude Code용 스킬
+%USERPROFILE%\.agents\skills\kchppt\      Codex용 스킬
 ```
 
-전부 사용자 폴더입니다. `Program Files`를 건드리지 않습니다.
+**WSL / macOS / Linux**
+
+```text
+~/.local/share/kchppt/     KCHPPT CLI와 KCH 자산
+~/.local/bin/kch-ppt       실행 명령
+~/.claude/skills/kchppt/   Claude Code용 스킬
+~/.agents/skills/kchppt/   Codex용 스킬
+```
+
+전부 사용자 폴더입니다. `Program Files`나 `/usr/local`을 건드리지 않습니다.
+스킬이 사용자 전역 경로에 설치되므로 **어느 폴더에서 쓰든 동일하게 동작**합니다.
 
 ---
 
