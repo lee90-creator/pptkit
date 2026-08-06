@@ -105,7 +105,8 @@ function Resolve-Node {
 	}
 	$command = Get-Command node.exe -ErrorAction SilentlyContinue
 	if ($null -eq $command) { $command = Get-Command node -ErrorAction SilentlyContinue }
-	return if ($null -eq $command) { $null } else { $command.Source }
+	if ($null -eq $command) { return $null }
+	return $command.Source
 }
 
 try {
