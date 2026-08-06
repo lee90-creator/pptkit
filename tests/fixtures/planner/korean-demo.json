@@ -1,0 +1,68 @@
+{
+	"title": "KCH 그룹 소개",
+	"purpose": "임직원 대상 그룹 현황 공유",
+	"audience": "KCH 임직원",
+	"mode": "corporate",
+	"slides": [
+		{
+			"id": "overview",
+			"purpose": "그룹 핵심 역량 소개",
+			"claim": "KCH는 산업과 에너지를 연결하는 실행 역량을 보유하고 있습니다.",
+			"title": "그룹 핵심 역량",
+			"bodyBlocks": [
+				{
+					"title": "산업",
+					"text": "현장 중심의 사업개발 역량"
+				},
+				{
+					"title": "에너지",
+					"text": "재생에너지 프로젝트 실행 경험"
+				}
+			],
+			"visual": {
+				"type": "diagram",
+				"sourceData": [
+					{
+						"label": "주요 사업",
+						"value": 2,
+						"unit": "개 영역"
+					}
+				],
+				"x": 123,
+				"font": "Arial",
+				"color": "#ff00ff"
+			},
+			"imageIntent": {
+				"action": "none",
+				"nativeFallback": "diagram"
+			},
+			"provenance": [],
+			"layout": {
+				"x": 1,
+				"y": 1
+			},
+			"headerSkin": "kch-framed-right",
+			"usePanorama": false
+		},
+		{
+			"id": "pipeline",
+			"purpose": "사업 추진 흐름 설명",
+			"claim": "검토부터 실행까지 하나의 관리 체계로 연결합니다.",
+			"title": "사업 추진 체계",
+			"bodyBlocks": [
+				{
+					"text": "기회 검토 → 사업성 분석 → 투자 의사결정 → 실행"
+				}
+			],
+			"visual": {
+				"type": "process"
+			},
+			"imageIntent": {
+				"action": "none",
+				"nativeFallback": "process"
+			},
+			"provenance": [],
+			"usePanorama": false
+		}
+	]
+}

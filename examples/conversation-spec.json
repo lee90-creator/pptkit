@@ -1,0 +1,110 @@
+{
+	"title": "2027년 핵심 사업계획",
+	"purpose": "경영진의 연간 투자 우선순위 의사결정",
+	"audience": "KCH 경영진",
+	"mode": "corporate",
+	"slides": [
+		{
+			"id": "direction",
+			"purpose": "연간 추진 방향을 요약",
+			"claim": "핵심 사업에 자원을 집중해 실행력을 높입니다.",
+			"title": "2027년 추진 방향",
+			"bodyBlocks": [
+				{
+					"title": "선택",
+					"text": "검증된 사업 기회에 투자 역량을 집중합니다."
+				},
+				{
+					"title": "실행",
+					"text": "사업, 금융, 운영 조직의 의사결정을 연결합니다."
+				}
+			],
+			"visual": {
+				"type": "metric",
+				"sourceData": [
+					{
+						"label": "핵심 방향",
+						"value": 2,
+						"unit": "개"
+					}
+				]
+			},
+			"imageIntent": {
+				"action": "none",
+				"nativeFallback": "metric"
+			},
+			"usePanorama": false
+		},
+		{
+			"id": "execution",
+			"purpose": "실행 단계를 설명",
+			"claim": "검토부터 성과 점검까지 하나의 운영 체계로 관리합니다.",
+			"title": "통합 실행 체계",
+			"bodyBlocks": [
+				{
+					"text": "각 단계의 의사결정 기준과 책임 조직을 명확히 운영합니다."
+				}
+			],
+			"visual": {
+				"type": "process",
+				"sourceData": [
+					{
+						"label": "기회 검토",
+						"value": "사업성 확인"
+					},
+					{
+						"label": "투자 결정",
+						"value": "우선순위 확정"
+					},
+					{
+						"label": "실행",
+						"value": "일정과 품질 관리"
+					},
+					{
+						"label": "성과 점검",
+						"value": "목표 대비 검토"
+					}
+				]
+			},
+			"imageIntent": {
+				"action": "none",
+				"nativeFallback": "process"
+			},
+			"usePanorama": false
+		},
+		{
+			"id": "decision",
+			"purpose": "경영진 검토사항을 정리",
+			"claim": "투자 우선순위와 실행 책임을 확정해야 합니다.",
+			"title": "의사결정 요청사항",
+			"bodyBlocks": [
+				{
+					"title": "투자",
+					"text": "핵심 사업별 투자 우선순위를 확정합니다."
+				},
+				{
+					"title": "책임",
+					"text": "사업별 책임 조직과 점검 주기를 확정합니다."
+				}
+			],
+			"visual": {
+				"type": "diagram",
+				"sourceData": [
+					{
+						"label": "투자 우선순위",
+						"value": "확정"
+					},
+					{
+						"label": "실행 책임",
+						"value": "지정"
+					}
+				]
+			},
+			"imageIntent": {
+				"action": "none",
+				"nativeFallback": "diagram"
+			},
+			"usePanorama": false
+		}
+	]
+}

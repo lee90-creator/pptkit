@@ -1,0 +1,24 @@
+node_modules/
+
+# Generated application and release bundles
+dist/app/*.cjs
+release/
+
+# Generated presentations
+output/
+*.pptx
+
+# Local conversation specs and generated QA receipts
+.kchppt/
+*.pptx.provenance.json
+*.pptx.office-qa/
+
+# Agent working state, logs and evidence
+.omo/
+.omc/
+.omx/
+.superpowers/
+.debug-journal.md
+
+# Licensed font staging (not redistributable)
+font/

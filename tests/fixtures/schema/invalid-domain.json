@@ -1,0 +1,51 @@
+{
+	"unknownKey": {
+		"id": "slide-invalid",
+		"purpose": "오류",
+		"claim": "알 수 없는 키를 거부합니다.",
+		"title": "오류",
+		"bodyBlocks": [],
+		"visual": { "type": "text", "text": "오류" },
+		"imageIntent": { "action": "none", "nativeFallback": "text" },
+		"provenance": [],
+		"usePanorama": false,
+		"unknown": true
+	},
+	"missingClaim": {
+		"id": "slide-invalid",
+		"purpose": "오류",
+		"title": "오류",
+		"bodyBlocks": [],
+		"visual": { "type": "text", "text": "오류" },
+		"imageIntent": { "action": "none", "nativeFallback": "text" },
+		"provenance": [],
+		"usePanorama": false
+	},
+	"layoutCoordinates": {
+		"id": "slide-invalid",
+		"purpose": "오류",
+		"claim": "좌표를 거부합니다.",
+		"title": "오류",
+		"bodyBlocks": [],
+		"visual": { "type": "text", "text": "오류", "x": 1, "font": "Arial", "color": "#fff" },
+		"imageIntent": { "action": "none", "nativeFallback": "text" },
+		"provenance": [],
+		"usePanorama": false
+	},
+	"malformedChart": {
+		"type": "chart",
+		"chartType": "line",
+		"categories": ["2025", "2026"],
+		"series": [{ "name": "매출", "values": [10] }]
+	},
+	"malformedTable": {
+		"type": "table",
+		"columns": ["항목", "값"],
+		"rows": [{ "cells": ["용량"] }]
+	},
+	"incompleteProvenance": {
+		"source": "provided",
+		"identifier": "assets/site.png",
+		"slideId": "slide-image"
+	}
+}

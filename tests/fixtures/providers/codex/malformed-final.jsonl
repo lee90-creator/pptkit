@@ -1,0 +1,3 @@
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item-1","type":"agent_message","text":"not-json"}}
+{"type":"turn.completed","usage":{"input_tokens":1,"output_tokens":1}}

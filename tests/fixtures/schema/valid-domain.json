@@ -1,0 +1,151 @@
+{
+	"document": {
+		"id": "document-kch-demo",
+		"title": "KCH 그룹 소개",
+		"purpose": "그룹 현황 공유",
+		"audience": "KCH 임직원",
+		"mode": "corporate",
+		"headerSkin": "kch-framed-right",
+		"renderStatus": "verified",
+		"slides": [
+			{
+				"id": "slide-chart",
+				"purpose": "추세 설명",
+				"claim": "매출이 증가했습니다.",
+				"title": "매출 추세",
+				"bodyBlocks": [],
+				"visual": {
+					"type": "chart",
+					"chartType": "line",
+					"categories": ["2025", "2026"],
+					"series": [{ "name": "매출", "values": [10, 20] }],
+					"unit": "억원"
+				},
+				"imageIntent": { "action": "none", "nativeFallback": "chart" },
+				"provenance": [],
+				"usePanorama": false
+			},
+			{
+				"id": "slide-table",
+				"purpose": "사양 설명",
+				"claim": "핵심 사양을 충족합니다.",
+				"title": "핵심 사양",
+				"bodyBlocks": [],
+				"visual": {
+					"type": "table",
+					"columns": ["항목", "값"],
+					"rows": [{ "cells": ["용량", 100] }],
+					"unit": "MW"
+				},
+				"imageIntent": { "action": "none", "nativeFallback": "table" },
+				"provenance": [],
+				"usePanorama": false
+			},
+			{
+				"id": "slide-diagram",
+				"purpose": "관계 설명",
+				"claim": "조직이 연결되어 있습니다.",
+				"title": "조직 관계",
+				"bodyBlocks": [],
+				"visual": {
+					"type": "diagram",
+					"nodes": [{ "id": "node-a", "label": "본사" }],
+					"edges": []
+				},
+				"imageIntent": { "action": "none", "nativeFallback": "diagram" },
+				"provenance": [],
+				"usePanorama": false
+			},
+			{
+				"id": "slide-process",
+				"purpose": "절차 설명",
+				"claim": "검토 후 실행합니다.",
+				"title": "추진 절차",
+				"bodyBlocks": [],
+				"visual": {
+					"type": "process",
+					"steps": [{ "id": "step-a", "label": "검토" }]
+				},
+				"imageIntent": { "action": "none", "nativeFallback": "process" },
+				"provenance": [],
+				"usePanorama": false
+			},
+			{
+				"id": "slide-timeline",
+				"purpose": "일정 설명",
+				"claim": "2026년에 착공합니다.",
+				"title": "주요 일정",
+				"bodyBlocks": [],
+				"visual": {
+					"type": "timeline",
+					"events": [{ "date": "2026-01", "label": "착공" }]
+				},
+				"imageIntent": { "action": "none", "nativeFallback": "timeline" },
+				"provenance": [],
+				"usePanorama": false
+			},
+			{
+				"id": "slide-image",
+				"purpose": "현장 설명",
+				"claim": "현장 여건이 양호합니다.",
+				"title": "현장 전경",
+				"bodyBlocks": [],
+				"visual": {
+					"type": "image",
+					"assetId": "asset-site",
+					"alt": "사업 대상지 전경"
+				},
+				"imageIntent": { "action": "select", "query": "사업 대상지", "nativeFallback": "diagram" },
+				"provenance": [
+					{
+						"source": "provided",
+						"identifier": "assets/site.png",
+						"promptHash": null,
+						"createdAt": "2026-08-03T00:00:00.000Z",
+						"licenseStatus": "KCH 내부 제공",
+						"slideId": "slide-image"
+					}
+				],
+				"usePanorama": false
+			},
+			{
+				"id": "slide-metric",
+				"purpose": "성과 설명",
+				"claim": "설비용량은 100MW입니다.",
+				"title": "설비용량",
+				"bodyBlocks": [],
+				"visual": {
+					"type": "metric",
+					"label": "설비용량",
+					"value": 100,
+					"unit": "MW"
+				},
+				"imageIntent": { "action": "none", "nativeFallback": "metric" },
+				"provenance": [],
+				"usePanorama": false
+			},
+			{
+				"id": "slide-text",
+				"purpose": "요약 설명",
+				"claim": "핵심 메시지를 요약합니다.",
+				"title": "요약",
+				"bodyBlocks": [{ "text": "핵심 메시지" }],
+				"visual": { "type": "text", "text": "핵심 메시지" },
+				"imageIntent": { "action": "none", "nativeFallback": "text" },
+				"provenance": [],
+				"usePanorama": false
+			}
+		]
+	},
+	"providerEnvelope": {
+		"provider": "codex",
+		"state": "authenticated",
+		"executable": "codex.exe"
+	},
+	"bootstrapResult": {
+		"id": "runtime-node",
+		"state": "SKIP",
+		"supportTier": "A",
+		"message": "이미 설치되어 건너뜁니다."
+	}
+}

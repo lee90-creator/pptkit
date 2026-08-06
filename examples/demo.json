@@ -1,0 +1,31 @@
+{
+	"title": "KCH 그룹 소개",
+	"purpose": "KCH 임직원이 그룹 역량과 신안 해상풍력 추진 현황을 설명하는 편집 가능한 발표자료",
+	"audience": "KCH 임직원 및 내부 이해관계자",
+	"language": "ko-KR",
+	"requiredSlideKinds": [
+		"cover",
+		"toc",
+		"section-divider",
+		"closing",
+		"kpi-dashboard",
+		"comparison-cards",
+		"strategy-cards",
+		"org-chart",
+		"hub-spoke",
+		"process",
+		"timeline",
+		"mini-gantt",
+		"specification-table",
+		"data-table",
+		"matrix-heatmap",
+		"financial-dashboard",
+		"image-callout"
+	],
+	"constraints": {
+		"editableNativeObjects": true,
+		"brand": "KCH",
+		"doNotInventFacts": true,
+		"maxBodyBlocksPerSlide": 3
+	}
+}

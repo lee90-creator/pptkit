@@ -1,0 +1,35 @@
+{
+	"name": "kch-ppt-automation",
+	"version": "0.2.1",
+	"private": true,
+	"description": "KCH presentation automation CLI",
+	"type": "module",
+	"main": "dist/app/kch-ppt.cjs",
+	"bin": {
+		"kch-ppt": "dist/app/kch-ppt.cjs"
+	},
+	"scripts": {
+		"typecheck": "bunx tsc --noEmit",
+		"lint": "bunx biome check .",
+		"test": "bun test --parallel=1",
+		"build": "bun build src/index.ts --outfile dist/app/kch-ppt.cjs --target node --format cjs",
+		"build:release": "bun scripts/build-lightweight.ts --output release/kch-ppt-lightweight --zip release/kch-ppt-lightweight.zip",
+		"verify": "bun run typecheck && bun run lint && bun run test && bun run build"
+	},
+	"dependencies": {
+		"commander": "^13.1.0",
+		"image-size": "^2.0.2",
+		"jszip": "^3.10.1",
+		"pptxgenjs": "4.0.1",
+		"zod": "^4.0.0"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "1.9.4",
+		"@types/bun": "latest",
+		"typescript": "^5.8.3"
+	},
+	"engines": {
+		"bun": ">=1.0",
+		"node": ">=20"
+	}
+}

@@ -1,0 +1,62 @@
+{
+	"schemaVersion": 1,
+	"payloads": [
+		{
+			"id": "node-win32-x64",
+			"package": "node",
+			"version": "22.22.2",
+			"url": "https://nodejs.org/dist/v22.22.2/node-v22.22.2-win-x64.zip",
+			"integrity": "sha256-7c93e9d92bf68c07182b471aa187e35ee6cd08ef0f24ab060dfff605fcc1c57c",
+			"extractPath": "dist/runtime/node-v22.22.2-win-x64",
+			"dependencies": []
+		},
+		{
+			"id": "claude-code",
+			"package": "@anthropic-ai/claude-code",
+			"version": "2.1.220",
+			"url": "https://registry.npmjs.org/@anthropic-ai/claude-code/-/claude-code-2.1.220.tgz",
+			"integrity": "sha512-ogBrvwkqF9f8okmnXKxmRNHuvtFxFEffe5pWdqOV3iQDxlUOKirFqnyWC7NGXXnDA4WkkbPH8pvSbwyCR2Auyw==",
+			"extractPath": "dist/tools/claude/node_modules/@anthropic-ai/claude-code",
+			"dependencies": [
+				{
+					"package": "@anthropic-ai/claude-code-win32-x64",
+					"version": "2.1.220"
+				}
+			]
+		},
+		{
+			"id": "claude-code-win32-x64",
+			"package": "@anthropic-ai/claude-code-win32-x64",
+			"version": "2.1.220",
+			"url": "https://registry.npmjs.org/@anthropic-ai/claude-code-win32-x64/-/claude-code-win32-x64-2.1.220.tgz",
+			"integrity": "sha512-UGrjH8cGhC6PzhTyZSdgf/RpKxpfk9XJZ/RT/wsG2AJg9yEJLjLg6/TrnlL8RFbEv6Zahu0Quytc02UOpA/GiA==",
+			"extractPath": "dist/tools/claude/node_modules/@anthropic-ai/claude-code-win32-x64",
+			"dependencies": []
+		},
+		{
+			"id": "codex",
+			"package": "@openai/codex",
+			"version": "0.145.0",
+			"url": "https://registry.npmjs.org/@openai/codex/-/codex-0.145.0.tgz",
+			"integrity": "sha512-/PSPSFujjjmiyVFvG2yu/grOFhsWdokTH8t2KGWhXSo/M5n/dIDsnbsnO82/7bLtIoDuzQf7ATBUMWqPWQINlQ==",
+			"extractPath": "dist/tools/codex/node_modules/@openai/codex",
+			"dependencies": [
+				{
+					"package": "@openai/codex-win32-x64",
+					"resolvesPackage": "@openai/codex",
+					"version": "0.145.0-win32-x64"
+				}
+			]
+		},
+		{
+			"id": "codex-win32-x64",
+			"package": "@openai/codex",
+			"alias": "@openai/codex-win32-x64",
+			"version": "0.145.0-win32-x64",
+			"url": "https://registry.npmjs.org/@openai/codex/-/codex-0.145.0-win32-x64.tgz",
+			"integrity": "sha512-u0h9lk094CaXRSqE34SBW2dRaQTPa6fASXqehczWH9QdsU62mBsiAgAdp6tCG4i+YzPmmhjD8FdXNnYGNmwuMg==",
+			"extractPath": "dist/tools/codex/node_modules/@openai/codex-win32-x64",
+			"dependencies": []
+		}
+	]
+}

@@ -1,0 +1,12 @@
+{
+	"skin": "shinan-line-left",
+	"source": "260514_신안 해상풍력 일반산업단지 사업보고_PF 조기상환기준.pptx slide 3 profile and approved research §3.3",
+	"canvas": { "width": 960, "height": 540 },
+	"anchors": {
+		"brandLockup": { "x": 6, "y": 18, "width": 96, "height": 24 },
+		"topRule": { "x": 352, "y": 54, "width": 578, "height": 0 },
+		"title": { "x": 363.714, "y": 23.34, "width": 480, "height": 38.775 },
+		"content": { "x": 30, "y": 84, "width": 900, "height": 416 },
+		"panorama": { "x": 0, "y": 492, "width": 960, "height": 48 }
+	}
+}

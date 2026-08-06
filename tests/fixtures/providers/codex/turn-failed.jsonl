@@ -1,0 +1,2 @@
+{"type":"turn.started"}
+{"type":"turn.failed","error":{"message":"model turn failed"}}

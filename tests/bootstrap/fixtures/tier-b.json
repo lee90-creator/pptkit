@@ -1,0 +1,10 @@
+{
+	"name": "degraded-offline-no-office",
+	"batAllowed": true,
+	"powershellAllowed": true,
+	"userScopeWrite": true,
+	"payloadExecutionAllowed": true,
+	"networkAvailable": false,
+	"officeAvailable": false,
+	"fontInstallAllowed": false
+}

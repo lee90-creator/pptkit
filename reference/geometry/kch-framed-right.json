@@ -1,0 +1,13 @@
+{
+	"skin": "kch-framed-right",
+	"source": "KCH그룹 소개자료_260507.pptx slide 3 recursive profile",
+	"canvas": { "width": 960, "height": 540 },
+	"anchors": {
+		"rightFrame": { "x": 582, "y": -2.465, "width": 378, "height": 366.279 },
+		"topRule": { "x": 30.687, "y": 70.27, "width": 898.626, "height": 0 },
+		"verticalBand": { "x": 43.964, "y": -2.465, "width": 19.33, "height": 83.013 },
+		"sectionNumber": { "x": 66.796, "y": 15.725, "width": 88.254, "height": 87.244 },
+		"title": { "x": 155.745, "y": 27.763, "width": 161.209, "height": 36.352 },
+		"logo": { "x": 818, "y": 21.603, "width": 111, "height": 33.995 }
+	}
+}

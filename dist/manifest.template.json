@@ -1,0 +1,69 @@
+{
+	"schemaVersion": 1,
+	"installRoot": "%LOCALAPPDATA%\\KCH\\PptAutomation",
+	"payloadLock": "tools-lock.json",
+	"payloads": [
+		{
+			"id": "node-win32-x64",
+			"stagedPath": "dist/runtime/node-v22.22.2-win-x64",
+			"integrity": "sha256-7c93e9d92bf68c07182b471aa187e35ee6cd08ef0f24ab060dfff605fcc1c57c"
+		},
+		{
+			"id": "claude-code",
+			"stagedPath": "dist/tools/claude/node_modules/@anthropic-ai/claude-code",
+			"integrity": "sha512-ogBrvwkqF9f8okmnXKxmRNHuvtFxFEffe5pWdqOV3iQDxlUOKirFqnyWC7NGXXnDA4WkkbPH8pvSbwyCR2Auyw=="
+		},
+		{
+			"id": "claude-code-win32-x64",
+			"stagedPath": "dist/tools/claude/node_modules/@anthropic-ai/claude-code-win32-x64",
+			"integrity": "sha512-UGrjH8cGhC6PzhTyZSdgf/RpKxpfk9XJZ/RT/wsG2AJg9yEJLjLg6/TrnlL8RFbEv6Zahu0Quytc02UOpA/GiA=="
+		},
+		{
+			"id": "codex",
+			"stagedPath": "dist/tools/codex/node_modules/@openai/codex",
+			"integrity": "sha512-/PSPSFujjjmiyVFvG2yu/grOFhsWdokTH8t2KGWhXSo/M5n/dIDsnbsnO82/7bLtIoDuzQf7ATBUMWqPWQINlQ=="
+		},
+		{
+			"id": "codex-win32-x64",
+			"stagedPath": "dist/tools/codex/node_modules/@openai/codex-win32-x64",
+			"integrity": "sha512-u0h9lk094CaXRSqE34SBW2dRaQTPa6fASXqehczWH9QdsU62mBsiAgAdp6tCG4i+YzPmmhjD8FdXNnYGNmwuMg=="
+		}
+	],
+	"runtime": {
+		"source": "dist/runtime/node-v22.22.2-win-x64",
+		"target": "runtime/node"
+	},
+	"application": {
+		"source": "dist/app/kch-ppt.cjs",
+		"target": "app/kch-ppt.cjs"
+	},
+	"fonts": {
+		"scope": "user",
+		"source": "assets/fonts"
+	},
+	"tools": {
+		"claude": {
+			"rootPackage": "dist/tools/claude/node_modules/@anthropic-ai/claude-code",
+			"platformPackage": "dist/tools/claude/node_modules/@anthropic-ai/claude-code-win32-x64",
+			"launcher": "bin/claude.cmd"
+		},
+		"codex": {
+			"rootPackage": "dist/tools/codex/node_modules/@openai/codex",
+			"platformPackage": "dist/tools/codex/node_modules/@openai/codex-win32-x64",
+			"launcher": "bin/codex.cmd"
+		}
+	},
+	"steps": [
+		"distribution-manifest",
+		"runtime-node",
+		"application",
+		"fonts-pretendard",
+		"claude-cli",
+		"codex-cli",
+		"claude-kchppt",
+		"codex-kchppt",
+		"provider-auth",
+		"office-qa"
+	],
+	"riskCodes": ["R-PS", "R-STOP"]
+}

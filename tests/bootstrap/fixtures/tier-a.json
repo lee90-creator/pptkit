@@ -1,0 +1,10 @@
+{
+	"name": "supported",
+	"batAllowed": true,
+	"powershellAllowed": true,
+	"userScopeWrite": true,
+	"payloadExecutionAllowed": true,
+	"networkAvailable": true,
+	"officeAvailable": true,
+	"fontInstallAllowed": true
+}

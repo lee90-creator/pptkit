@@ -1,0 +1,15 @@
+{
+	"name": "blocked-applocker",
+	"batAllowed": true,
+	"powershellAllowed": false,
+	"userScopeWrite": true,
+	"payloadExecutionAllowed": false,
+	"networkAvailable": false,
+	"officeAvailable": false,
+	"fontInstallAllowed": false,
+	"blocked": {
+		"policy": "AppLocker",
+		"path": "%LOCALAPPDATA%\\KCH\\PptAutomation\\runtime\\node.exe",
+		"sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+	}
+}

@@ -1,0 +1,8 @@
+{
+	"name": "@anthropic-ai/claude-code",
+	"version": "2.1.220",
+	"dependencies": {},
+	"optionalDependencies": {
+		"@anthropic-ai/claude-code-win32-x64": "2.1.220"
+	}
+}
