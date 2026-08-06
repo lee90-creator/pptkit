@@ -1,7 +1,7 @@
 {
 	"name": "kchppt",
 	"description": "Claude Code 대화에서 KCH 양식의 편집 가능한 PowerPoint를 생성합니다.",
-	"version": "0.2.0",
+	"version": "0.2.1",
 	"author": {
 		"name": "KCH"
 	}
